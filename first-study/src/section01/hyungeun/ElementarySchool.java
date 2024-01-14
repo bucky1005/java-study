@@ -14,8 +14,12 @@ public class ElementarySchool {
         Scanner sc = new Scanner(System.in);
 
         while (true) {                                      // 예외 처리를 위해 while문 사용
-            System.out.print("학생의 이름을 입력하세요: ");
+
+            System.out.print("학생의 이름을 입력하세요 (종료하려면 '종료'입력): ");
             String name = sc.nextLine();
+
+            if(name.equals("종료"))
+                break;
 
             System.out.print("학년을 입력하세요 (1~6): ");
             int grade = sc.nextInt();
@@ -35,14 +39,11 @@ public class ElementarySchool {
 
             sc.nextLine(); // 버퍼 비우기
 
-            if ((grade >= 4 && score >= 70) || (grade <= 3 && score >= 60) || (grade == 6 && score >= 80)) {
+            if ((grade == 6 && score >= 80) || ((grade < 6 && grade >= 4) && score >= 70) || (grade <= 3 && score >= 60)) {
                 System.out.println(name + " 학생은 다음 학년으로 갑니다");
             } else {
                 System.out.println(name + " 학생은 내년에 더 노력하세요");
             }
         }
-
     }
 }
-
-

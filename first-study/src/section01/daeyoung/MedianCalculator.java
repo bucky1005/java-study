@@ -7,7 +7,7 @@ public class MedianCalculator {
 
         /* Q) 사용자로 부터 세 개의 수를 입력 받은 후, 입력 받은 수 중 중앙값을 출력 하시오. */
 
-        /* 설명) 사용자에게 세 개의 수를 입력 받는 코드  => 메소드로 생성 */
+        /* 설명) 사용자에게 세 개의 수를 입력 받는 코드*/
         Scanner sc = new Scanner(System.in);
 
         System.out.printf("첫번째 값 입력: ");

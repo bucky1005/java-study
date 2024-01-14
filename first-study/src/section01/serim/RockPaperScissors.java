@@ -1,4 +1,4 @@
-package section01.first_study;
+package section01.serim;
 
 import java.util.Random;
 import java.util.Scanner;

@@ -39,7 +39,6 @@ public class Serim {
 //        System.out.println("computerChoice = " + computerChoice);       // 문자열로 잘 변환되는지 확인
 
         /* 설명) 컴퓨터와 사용자의 가위바위보 결과를 반환하는 코드 */
-        public static String printResult
         /* 가위바위보 1:1 대결 시 나올 수 있는 경우의 수는 총 9가지
           1) 가위 vs 가위
           2) 가위 vs 바위

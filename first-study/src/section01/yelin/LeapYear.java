@@ -14,17 +14,21 @@ public class LeapYear {
 
         Scanner sc = new Scanner(System.in);
 
-        while(true){
-            System.out.printf("연도를 입력하세요: ");
-            int inputYear = sc.nextInt();
+        /* 설명) 연도 입력 받기 */
+        System.out.printf("연도를 입력하세요: ");
+        int inputYear = sc.nextInt();
 
-            if(inputYear < 0 || inputYear > 4000){
-                System.out.println("잘못된 입력입니다.");
-                continue;
-            }
+        /* 설명) 예외 처리(1 ~ 4000 범위를 벗어날 경우)*/
+        if (inputYear < 1 || inputYear > 4000) {
+            System.out.println("잘못된 입력입니다.");
+            return;
         }
 
-
-
+        /* 설명) 윤년 여부 출력 (윤년 = 1, 아닌 경우 = 0) */
+        if((inputYear % 4 == 0 && inputYear % 100 != 0) || inputYear % 400 == 0){
+            System.out.println("1");
+        } else {
+            System.out.println("0");
+        }
     }
 }

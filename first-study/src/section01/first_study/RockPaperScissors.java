@@ -3,7 +3,7 @@ package section01.first_study;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Serim {
+public class RockPaperScissors {
     public static void main(String[] args) {
 
         /* Q 1) 사용자 입력과 random 메소드를 사용하여, 사용자(User)와 컴퓨터가 대결하는 가위 바위 보 게임을 만들어보자.

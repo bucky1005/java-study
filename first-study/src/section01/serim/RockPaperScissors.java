@@ -24,7 +24,7 @@ public class RockPaperScissors {
 //        System.out.println("userInput = " + userInput);     // 입력 확인용 코드
 
         /* 설명) 사용자 입력에 대한 예외 처리(잘못된 값을 입력할 경우) */
-        if (!(userInput.equals("가위") || userInput.equals("바위") || userInput.equals("보"))) {      // 사용자 입력에 대한 예외 처리(가위, 바위, 보 외의 문자 입력 시)
+        if (!(userInput.equals(SCISSORS) || userInput.equals(ROCK) || userInput.equals(PAPER))) {      // 사용자 입력에 대한 예외 처리(가위, 바위, 보 외의 문자 입력 시)
             System.out.printf("잘못된 값이 입력되었습니다.\n프로그램을 종료합니다.");
             return;
         }
